@@ -10,6 +10,12 @@ public class Clock : MonoBehaviour
     private int degreesPerHour = 30;
     private int degreesPerMinute = 6;
     private int degreesPerSecond = 6;
+    public static bool resizableWindow;
+
+    private void Awake()
+    {
+        resizableWindow = true;
+    }
 
     // Start is called before the first frame update
     void Update()
